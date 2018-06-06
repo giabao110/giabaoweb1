@@ -1,0 +1,519 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* RESET CSS */
+/* FONT */
+@font-face {
+    font-family: 'ProximaNova-RegularIt';
+    src: url('../font/ProximaNova-RegularIt/');
+    src: url('../font/ProximaNova-RegularIt/?#iefix') format('embedded-opentype'),
+        url('../font/ProximaNova-RegularIt/ProximaNova-RegularIt.woff2') format('woff2'),
+        url('../font/ProximaNova-RegularIt/ProximaNova-RegularIt.woff') format('woff'),
+        url('../font/ProximaNova-RegularIt/ProximaNova-RegularIt.ttf') format('truetype'),
+        url('../font/ProximaNova-RegularIt/ProximaNova-RegularIt.svg#ProximaNova-RegularIt') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'Merriweather-Regular';
+    src: url('../font/Merriweather-Regular/');
+    src: url('../font/Merriweather-Regular/?#iefix') format('embedded-opentype'),
+        url('../font/Merriweather-Regular/Merriweather-Regular.woff2') format('woff2'),
+        url('../font/Merriweather-Regular/Merriweather-Regular.woff') format('woff'),
+        url('../font/Merriweather-Regular/Merriweather-Regular.ttf') format('truetype'),
+        url('../font/Merriweather-Regular/Merriweather-Regular.svg#Merriweather-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('../font/Proxima\ Nova\ Bold/');
+    src: url('../font/Proxima\ Nova\ Bold/?#iefix') format('embedded-opentype'),
+        url('../font/Proxima\ Nova\ Bold/ProximaNova-Bold.woff2') format('woff2'),
+        url('../font/Proxima\ Nova\ Bold/ProximaNova-Bold.woff') format('woff'),
+        url('../font/Proxima\ Nova\ Bold/ProximaNova-Bold.ttf') format('truetype'),
+        url('../font/Proxima\ Nova\ Bold/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../font/Proxima\ Nova\ Regular/ProximaNova-Regular.eot');
+    src: url('../font/Proxima\ Nova\ Regular/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Proxima\ Nova\ Regular/ProximaNova-Regular.woff2') format('woff2'),
+        url('ProximaNova-Regular.woff') format('woff'),
+        url('../font/Proxima\ Nova\ Regular/ProximaNova-Regular.ttf') format('truetype'),
+        url('../font/Proxima\ Nova\ Regular/') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* HEADER */
+body{
+    background-image: url("../img/background.jpg");
+   	background-repeat: no-repeat;
+   	background-size: cover;
+   	height: 100%;	
+}
+.container{
+    max-width:  960px;
+    width:  calc(100% - 30px);
+    display: block;
+    margin:30px auto;	
+    background: #fff;  
+    padding: 43px 50px;
+    border-top:#a0c1d9 solid 1.5px;
+    outline:#ffffff solid 4.5px;
+}
+.menu{
+    text-align: right;
+    font-size: 12pt;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+}
+    a{
+        font-family: 'Proxima Nova Rg';
+    }
+    div nav a:visited {
+        color:#000000;
+    }
+    nav a:hover {
+        color:#ffffff;
+        text-decoration:none;
+        border-bottom:#004070 solid 2.5px;
+    }
+    div nav a:link {
+        text-decoration:none;
+    }
+    a:visited{
+        color:#004070;
+    }
+    header ul{
+        margin: 0;
+        padding: 0;
+    }
+    header li{
+        display: inline;
+        padding: 0px 0px 0 44px;
+        color:#000000;
+     }
+     .branding #logo{
+         background-size: cover;
+         background-position: center;
+         inline-size:150px;
+         position: relative;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+     }
+     .menu #logophone{
+        vertical-align: baseline;
+        inline-size: 15px;
+     }
+     .contact{
+         padding: 10px 0 15px 0;
+     }
+     a{
+        font-family:'Proxima Nova Rg';
+     }   
+
+
+    /* HEADER */
+        #banner{
+            min-height: 413px;
+            background: url(../img/panner.png) no-repeat;
+            background-size: 100%;
+        }
+        #textbanner{
+            font-family: "Merriweather-Regular";
+            text-decoration: none;
+            font-size: 26pt;
+            width: 49%;
+            height: 50%;
+            padding: 60px 0;
+            line-height: 50px;	    
+        }
+        #textbanner a img{
+            inline-size: 147px;
+            padding: 40px 20px 0 0;
+        }
+
+       /* CONTENT */
+    .layout
+    {
+    display: flex;
+    justify-content: space-between;	
+    }
+    .layoutcolumn{
+    width: 32%;
+    }
+    .imgcontent a img{
+    inline-size: 284px;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: #004070 solid 1.5px;
+    /* padding-top: 7px; */
+    border-top-width: 38px;
+    padding-bottom: 7px;  
+    width: 100%
+    }
+    div #content1 a{
+    font-size: 10pt;
+    }
+    .headercontent{
+        font-family: "Merriweather-Regular";
+        text-decoration: none;
+        font-size: 19pt;
+        padding: 28px 0;	
+        height: 103px;
+    }
+    .description{
+        font-family: "Proxima Nova Bold" ;
+        text-decoration: none;
+        font-size: 11pt;
+        font-weight: bold;
+        line-height: 20px;	
+    }
+    #content1{
+        padding: 26px 0 0 0;
+        font-family: 'Proxima Nova Rg';
+        font-size: 11pt;
+    }
+
+    /* SIDEBAR */
+   aside {
+        margin:86px 0 0 0;
+    }
+    #star img{
+        inline-size:90px;
+        padding-top: 15px;
+    }
+    #end p{
+        padding: 17px 0 0 0;
+        font-family: "ProximaNova-RegularIt";
+        font-size:12pt;
+        color: #818080;
+    }
+    div.leftsider{
+       width: 30%;
+        display: flex;
+        
+    }
+    div.rightsider {
+        width: 66%;
+        display: flex;
+    }
+    .sider a img{
+        inline-size: 78px;
+        text-align: center;
+        padding: 65px 21px;
+       }
+    div#avatar{
+        position: relative;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    div#avatar img{
+        inline-size: 79%;
+        padding: 0 0 0 43px;
+    }
+
+     #footercontact {
+   	background: url(../img/contact.jpg) no-repeat;
+   	background-size: 100%;
+   	min-height: 263px;
+   	margin: 62px 0 44px 0	;
+   	border:#ffffff solid 3px;
+   	outline:#a0c1d9 solid 1px;
+   	display: flex;
+   	justify-content: space-between;
+   }
+   div#contactleft{
+       width: 30%;
+   }
+   div#contactright{
+    width: 66%;
+   }
+
+   #contactleft{
+   	padding: 41px 0 0 41px;
+   	width: 38%;
+   }
+   .input{
+   	border: none;
+   	background: none;
+   	border-bottom: 1px dotted #3b7bab;
+   	color:#fff;
+   	width: 100%;
+   }
+
+   form {
+    padding: 26px 37px 0 0;
+    position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   }
+   div#about{
+	width: 100%;
+   }
+   .NameAdd{
+   	display: flex;
+   	justify-content: space-between;	
+   	width: 86%;
+   }
+   .name p{
+   	font-family: "Merriweather-Regular";
+   	font-size: 10pt;
+   	color: #96c1e0;
+   	line-height: 1px;
+   }
+   .button_1{
+   	border:none;
+   	width: calc(168px / 2);
+   	height: calc(62px / 2);
+   	background: #003760;
+   	color:#fff;
+   	cursor: pointer;
+   }
+   
+   .bordersignup{
+	color: #000;
+	display: flex;
+	overflow: hidden;
+	box-sizing: border-box;
+	justify-content: center;
+   }
+    /* SECTION */
+    section#getin {
+        display: flex;
+        justify-content: space-between;
+    }
+    #footercontact {
+        background: url(../img/contact.jpg) no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 263px;
+        margin: 62px 0 44px 0	;
+        border:#ffffff solid 3px;
+        outline:#a0c1d9 solid 1px;
+        display: flex;
+        justify-content: space-between;   
+    }
+    div.send input{
+        position: relative;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-top: 25px;
+   	inline-size: 85px;
+    }
+    .input{
+        border: none;
+        background: none;
+        border-bottom: 1px dotted #3b7bab;
+        color:#fff;
+        width: 100%;
+        line-height: 33px;
+    }
+    .NameAdd{
+        display: flex;
+        justify-content: space-between;	
+        width: 100%;
+    }
+    .name p{
+        font-family: "Merriweather-Regular";
+        font-size: 10pt;
+        color: #96c1e0;
+        line-height: 1px;
+    }
+    div.name{
+        width: 30%;
+    }
+    div.email{
+        width: 65%;
+    }
+    div.emailadd{
+        width: 100%
+    }
+    .button_1{
+        border:none;
+        width: calc(168px / 2);
+        height: calc(62px / 2);
+        background: #003760;
+        color:#fff;
+        cursor: pointer;
+    }
+    
+    .bordersignup{
+     color: #000;
+     display: flex;
+     overflow: hidden;
+     box-sizing: border-box;
+     justify-content: start;
+    }
+     .submit{
+         padding: 43px 0 0 0;
+         width: 27%;
+     }
+     .contentsubmit{
+     font-family: "Merriweather-Regular";
+     text-decoration: none;
+     font-size: 18pt;
+     padding: 47px 19px 0 0;
+     width: 29%;
+     text-align: right;
+     }
+     /* FOOTER */
+     .bordersignup #submit {
+		background-color: #003760;
+		padding: 1px 1px 1px 1px;
+		width: 461px;
+	}   
+	.bordersignup #submit button{
+		border: none;
+		float: none;
+		background-color: #003760;
+		color: #fff;
+		font-family: 'Proxima Nova Rg';
+		font-size: 9pt;
+		
+	
+	}
+	.bordersignup #submit input{
+		border: none;
+		width: 373px;
+		height: 31px;
+		padding: 1px 1px 1px 1px;
+		padding-left: 12px;
+		width: 375px;
+		
+	}
+	#submit input::placeholder{
+		color: #ababab;
+	}
+
+   input::placeholder {
+   	font-family: "ProximaNova-RegularIt";
+   	font-size: 9pt;
+   	
+   }
+   input:focus { 
+       outline: none;
+       border-color: #fff;
+   }
+
+   #title_1{
+   	font-family: "Merriweather-Regular";
+   	font-size: 18pt;
+   	height: 103px;	
+   	padding-right: 19px;
+   }	
+   input::placeholder{
+	color:#96c1e0;
+	font-size: 9pt;
+	font-family: "ProximaNova-RegularIt";
+   }
+   :focus{
+       outline: none;
+   }
+#title_1{
+    font-family: "Merriweather-Regular";
+    font-size: 18pt;
+    height: 103px;	
+    padding-right: 19px;
+}	
+input::placeholder{
+ color:#96c1e0;
+ font-size: 10pt;
+ font-family: "ProximaNova-RegularIt";
+ 
+}
+
+.button_2{
+    border:0;
+    width: calc(168px / 2);
+    height: calc(62px / 2);
+    background: #d1000b;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 30px;
+    outline: #003760 solid 1px;
+    cursor: pointer;
+
+}
+.copyright{
+    color:#252525;	
+    font-size:12pt;
+    text-align: center;
+    padding: 47px 0 51px 0;
+    font-family:'Proxima Nova Rg';
+}
+.send input{
+    padding-top: 25px;
+    inline-size: 85px;
+}
+form#submit{
+    width: 100%;
+}
